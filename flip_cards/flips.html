@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8" name="viewport" content="width = device-width, initial-scale=1">
+    <title>CSS FLIP CARD</title>
+    
+<body>
+    
+    <div class = "cont">
+        <div class = "card">
+            <div class = "cardfront">
+                <div class = "cardback">
+                    <h1>Boom</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+       <style>
+        .cont{position: relative;
+        width: 250px;
+        height: 300px;
+        perspective: 1000px;
+        background:transparent;}
+        
+        .card{position: absolute;
+        width: 250px;
+        height: 300px;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: plum;}
+
+        .card:hover .maincont{
+            transform: rotateY(180deg);}
+
+        .cardfront{position:absolute;
+        width: 250px;
+        height: 300px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background:rgb(250, 142, 200);
+        color:purple;}
+
+        .cardback{position:absolute;
+        width: 250px;
+        height: 300px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background: skyblue;
+        color:purple;
+        transform:rotateY(180deg);}
+    </style>
+</body>
+</head>
+
+</html>

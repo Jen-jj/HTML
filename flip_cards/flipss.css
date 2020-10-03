@@ -1,0 +1,32 @@
+
+        .maincont{position: relative;
+        width: 250px;
+        height: 340px;
+        background: pink;}
+        
+        .card:hover{
+            transform: rotateY(180deg);}
+        .card{position: absolute;
+        width: 250px;
+        height: 340px;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background: plum;}
+
+        .card:hover{
+            transform: rotateY(180deg);}
+
+        .cardfront{position:absolute;
+        width: 250px;
+        height: 340px;
+        backface-visibility: hidden;
+        background: plum;
+        color:purple;}
+
+        .cardback{position:absolute;
+        width: 50%;
+        height: 50%;
+        backface-visibility: hidden;
+        background: skyblue;
+        color:purple;
+        transform:rotateY(180deg);}
